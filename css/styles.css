@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #666;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hind Siliguri", sans-serif;
+  margin: 0;
+}
+h1 {
+  color: #fff;
+}
+.screen {
+  cursor: pointer;
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000 !important;
+}
+.controls {
+  background-color: #333;
+  color: #fff;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.controls .btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.controls .fa-play {
+  color: rgb(16, 192, 119);
+}
+.controls .fa-stop {
+  color: rgb(212, 21, 21);
+}
+.controls .fa-pause {
+  color: #fff;
+}
+.controls .timestamp {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.btn:focus {
+  outline: 0;
+}
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 70%;
+  }
+}
